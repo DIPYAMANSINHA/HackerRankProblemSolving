@@ -1,0 +1,25 @@
+size=int(input())
+list1=[int(x) for x in input().split()]
+
+min=1000000000000
+max=0
+lcount=-1
+hcount=-1
+
+for i in list1:
+   if i<min:
+      lcount+=1
+      min=i
+   else:
+      pass
+
+   if i>max:
+      hcount+=1
+      max=i
+   else:
+      pass
+
+if list1[0]==0:
+    hcount=hcount+1
+
+print(hcount, lcount)
