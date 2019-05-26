@@ -1,0 +1,10 @@
+#!/bin/python3
+
+n=int(input())
+array=[int(x) for x in input().split()]
+array.sort()
+l=len(array)
+b=array[l-1]
+count=array.count(b)
+
+print(count)
