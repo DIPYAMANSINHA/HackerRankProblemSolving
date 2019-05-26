@@ -1,0 +1,21 @@
+#!/bin/python3
+
+alice=[int(x) for x in input().split()]
+bob=[int(x) for x in input().split()]
+
+alice2=alice[0:3]
+bob2=bob[0:3]
+
+ascore=0
+bscore=0
+
+for i in range(0,3):
+    if alice2[i]>bob2[i]:
+        ascore+=1
+    elif alice2[i]<bob2[i]:
+        bscore+=1
+
+
+print(ascore,bscore)
+
+
