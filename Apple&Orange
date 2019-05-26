@@ -1,0 +1,23 @@
+#!/bin/python3
+
+house=[int(x) for x in input().split()]
+tree=[int(x) for x in input().split()]
+quant=[int(x) for x in input().split()]
+
+appledist=[int(x) for x in input().split()]
+orangdist=[int(x) for x in input().split()]
+
+appcount=0
+orancount=0
+
+for i in appledist:
+    k=i+tree[0]
+    if house[0]<=k and k<=house[1]:
+        appcount+=1
+
+for i in orangdist:
+    j=i+tree[1]
+    if house[0]<=j and j<=house[1]:
+        orancount+=1
+print(appcount)
+print(orancount)
