@@ -1,0 +1,20 @@
+#!/bin/python3
+
+n=int(input())
+mat=[[0 for x in range(n)] for y in range(n)]
+for i in range(n):
+    mat[i]=[int(x) for x in input().split(' ')]
+
+sumleft=0
+for i in range(n):
+    sumleft+=mat[i][i]
+
+sumright=0
+k=0
+while k<n:
+    sumright+=mat[k][n-k-1]
+
+    k=k+1
+
+dif=sumright-sumleft
+print(abs(dif))
