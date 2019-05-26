@@ -1,0 +1,18 @@
+#!/bin/python3
+
+array=[int(x) for x in input().split()]
+array.sort()
+
+minarray=array[0:len(array)-1]
+maxarray=array[1:len(array)]
+
+minsum=0
+maxsum=0
+
+for i in minarray:
+    minsum+=i
+
+for i in maxarray:
+    maxsum+=i
+
+print(minsum, maxsum)
